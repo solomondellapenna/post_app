@@ -1,0 +1,16 @@
+<div id="all">
+    <mat-card class="matcard" id="first-card">
+        <textarea [value]="msg" (input)="onValueChange($event)" id="text_area"></textarea>
+        <button type="button" (click)="post_msg()" title="post">Post Text</button>
+    </mat-card>
+    <mat-card class="matcard" id="second-card">
+        <mat-expansion-panel id="comment_section">
+            <mat-expansion-panel-header>
+                Post :: {{ post_count }}
+            </mat-expansion-panel-header>
+            <div *ngFor="let value of post_list">
+                <p>{{ value }}</p>
+            </div>
+        </mat-expansion-panel>
+    </mat-card>
+</div>
