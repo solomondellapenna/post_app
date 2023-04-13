@@ -12,12 +12,17 @@ import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeadCreateComponent } from './head-create/head-create.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { PostCreateComponent } from './post-create/post-create.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
-    HeadCreateComponent
+    HeadCreateComponent,
+    PostListComponent,
+    PostCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,8 @@ import { HeadCreateComponent } from './head-create/head-create.component';
     MatExpansionModule,
     MatFormFieldModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

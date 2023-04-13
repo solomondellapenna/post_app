@@ -1,22 +1,39 @@
+#all {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+#all *{
+    flex-grow: 1;
+}
+
 button {
     width: 50%;
     margin: 10px auto;
 }
 
+#second-card {
+    width: 98%;
+    margin: 0 1%;
+}
+
 #first-card {
-    width: 48%;
+    width: 98%;
+    margin: 0 1%;   
+}
+
+form {
     display: flex;
     flex-direction: column;
-    margin: 0 1%;
 }
 
-#second-card {
-    width: 48%;
-    margin: 0 1%;
+textarea {
+    margin: .5% 0 0 0;
 }
 
-#all {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
+button {
+    width: 50%;
+    margin: 10px auto;
 }

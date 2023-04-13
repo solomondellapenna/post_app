@@ -1,0 +1,10 @@
+<mat-card class="matcard" appearance="outlined" id="second-card">
+    <mat-expansion-panel id="comment_section">
+        <mat-expansion-panel-header>
+            <p>Post Dropdown</p>
+        </mat-expansion-panel-header>
+        <div *ngFor="let pst of postService.posts">
+            <p>{{pst.name}} - {{pst.content}}</p>
+        </div>
+    </mat-expansion-panel>
+</mat-card>

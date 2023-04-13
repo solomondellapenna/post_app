@@ -1,0 +1,7 @@
+<mat-card class="matcard" appearance="outlined" id="first-card">
+    <form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+        <input id="name" type="text" formControlName="name" placeholder="Name" required>
+        <textarea id="text_area" formControlName="content" placeholder="Message" required></textarea>
+        <button type="submit">Post</button>
+    </form>
+</mat-card>
